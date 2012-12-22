@@ -1,0 +1,9 @@
+changed something in matching js file
+questions from question 
+answer from answers
+
+in css file 
+
+sec3qn1 from main id changed
+in class questions 
+clear both;

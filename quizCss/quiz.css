@@ -1,0 +1,95 @@
+
+.dispnone{
+    display:none;
+}
+
+table a {
+text-decoration:none;
+}
+
+#nav0 {
+float: left;
+width: 24%;
+margin:0;
+padding:0;
+}
+
+#nav0 ul  {
+list-style-type:none;
+margin:0;
+padding:0;
+background-color: silver;
+}
+
+#nav0 ul li{
+position:relative;
+margin-right:20px;
+line-height:150%;
+zoom: 1;
+}
+
+#nav0 ul li a{
+font-size:16px;
+}
+
+#nav0 ul li a{
+text-decoration:underline;
+}
+
+#nav0 ul li a:hover{
+background-color:navy;
+color:white;
+text-decoration:none;
+}
+
+.section{
+float: right;
+width: 74%;
+}
+
+#navresult{
+font-size:20px;
+color:green;
+width:90px;
+margin-left:15px;
+font-family:verdana, sans-serif;
+}
+
+.secscore {
+position: absolute;
+right: -20px;
+}
+
+.qnInstr {
+position:relative;
+margin-right:20px;
+zoom: 1;
+}
+
+span.qnScore{
+font-weight:bold;
+font-size:18px;
+color:green;
+position:absolute;
+right:-20px;
+}
+
+.result{
+color:navy;
+}
+
+div.styleSection{
+font-size:25px;
+font-weight:bold;
+}
+
+table.sumNesTable, table.sumTable{
+width:575px;
+}
+
+table tr td{
+width:70px;
+font-size:13px;
+color:navy;
+}
+

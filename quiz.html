@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Quiz</title>
+<script language="javascript" type="text/javascript" src="quizJs/quiz.js"></script>
+<script language="javascript" type="text/javascript" src="quizJs/libutil.js"></script>
+<script language="javascript" src="quizJs/matching.js"></script>
+<link rel="stylesheet" type="text/css" href="quizCss/matching.css" />
+<link rel="stylesheet" type="text/css" href="quizCss/quiz.css" />
+</head>
+
+<body onload="firstDispHome('sec0', 'nav0'); attachInitEvent()">
+<div id="mainPage">
+<!-- start section 0 from here-->
+
+<div id="nav0">
+<ul>
+<li id="nav0sec0li"><a href="#" id="nav0sec0lia" class="secAnchr" >Home</a><span id="nav0sec0score" class="secscore"></span></li>
+<li id="nav0sec01li"><a href="#" id="nav0sec01lia" class="secAnchr" >Section 1</a><span id="nav0sec01score" class="secscore"></span></li>
+<li id="nav0sec02li"><a href="#" id="nav0sec02lia" class="secAnchr" >Section 2</a><span id="nav0sec02score" class="secscore"></span></li>
+<li id="nav0sec03li"><a href="#" id="nav0sec03lia" class="secAnchr" >Section 3</a><span id="nav0sec03score" class="secscore"></span></li>
+<li id="nav0sumAllli"><a href="#" id="nav0sumAlllia" class="secAnchr" >Summary</a><span id="nav0sumAllscore" class="secscore"></span></li>
+</ul>
+<br />
+<div id="navresult"></div>
+</div>
+
+
+<div id="sec0" class="section" >
+<div id="sec0hdr" class="styleSection">Home</div>
+<p id="para">This is the first para of the instructions for the whole quiz</p>
+<p>This is the second para of the instructions for the whole quiz</p>
+</div>
+
+<!-- start section 1 from here-->
+<div id="sec01" class="section">
+<div id="sec01hdr" class="styleSection">Section 1</div>
+
+<div id="sec01SumRes"></div> 
+<div id="sec01qn001" class="question multichoice" >
+<div id="sec01qn001hdr" class="qname">Question 1</div>
+<div id="sec01qn001text" class="qnInstr">Choose one of the following sdf
+<span id="sec01qn001score" class="qnScore">1</span></div>
+<div id="sec01txt1" class="text"></div>
+
+<div id="sec01qn001opt">
+<input type="hidden" id="sec01qn001max" value="1" />
+<input type="radio" name="sec01qn001opt" id="sec01qn001opt1" />Correct<span id="sec01qn001opt1fdbkimg"></span><br />
+<input type="radio" name="sec01qn001opt" id="sec01qn001opt2" />Incorrect<span id="sec01qn001opt2fdbkimg"></span> <br />
+<div id="sec01qn001sub">
+<input type="button" id="sec01qn001input001" class="subAnswer" name="sec01qn001opt1" value="submit" /></div>
+</div>
+
+<div id="sec01qn001result" class="dispnone result">kOI HAI</div>
+<hr />
+</div>
+
+<div id="sec01qn002" class="question multiAnswer" >
+<div id="sec01qn002hdr" class="qname">Question 2</div>
+<div id="sec01qn002text" class="qnInstr" >Choose one of the following
+<span id="sec01qn002score" class="qnScore">5</span></div>
+<div id="sec01txt2" class="text"></div>
+
+<div id="sec01qn002opt">
+<input type="hidden" id="sec01qn002max" value="5" />
+<input type="checkbox" id="sec01qn002opt1" />InCorrect<span id="sec01qn002opt1fdbkimg"></span><br />
+<input type="checkbox" id="sec01qn002opt2" />InCorrect<span id="sec01qn002opt2fdbkimg"></span><br />
+<input type="checkbox" id="sec01qn002opt3" />InCorrect<span id="sec01qn002opt3fdbkimg"></span><br />
+<input type="checkbox" id="sec01qn002opt4" />Correct<span id="sec01qn002opt4fdbkimg"></span><br />
+<input type="checkbox" id="sec01qn002opt5" />Correct<span id="sec01qn002opt5fdbkimg"></span><br />
+<div id="sec01qn002sub"><input type="button" id="sec01qn002input002" name='sec01qn002opt4 sec01qn002opt5' class="subAnswer" value="submit" /></div>
+</div>
+
+<div id="sec01qn002result" class="dispnone result"> </div>
+<label id="resultString"></label>
+<hr />
+</div>
+
+<hr />
+</div> <!-- section end -->
+
+<!-- start section 2 from here-->
+<div id="sec02" class="section">
+<div id="sec02hdr" class="styleSection">Section 2</div>
+<div id="sec02SumRes"></div> 
+<div id="sec02qn001" class="question shortAnswer">
+<div id="sec02qn001hdr" class="qname">Question 1</div>
+<div id="sec02qn001text" class="qnInstr">Please Type the Answer 
+<span id="sec02qn001score" class="qnScore">4</span><div id="sec02txt1" class="text"></div>
+
+</div>
+<div id="sec02qn001opt">
+<input type="hidden" id="sec02qn001max" value="4" />
+<label id="sec02qn001lab1">Which Person won the frist GM for india</label>
+<input type="text" id="sec02qn001opt1" /><span id="sec02qn001opt1fdbkimg"></span>
+<br />
+
+<div id="sec02qn001sub">
+<input type="button" id="sec02qn001input001" class="subAnswer" name='abhinav' value="submit" />
+</div></div>
+
+<div id="sec02qn001result" class="dispnone result"> </div>
+<hr />
+</div>
+
+<div id="sec02qn002" class="question matching">
+<div id="sec02qn002hdr" class="qname">Question 2</div>
+<div id="sec02qn002text" class="qnInstr">Choose one of the following
+<span id="sec02qn002score"  class="qnScore">5</span></div>
+<div id="sec02txt2" class="text"></div>
+<div id="sec02qn002opts">
+<input type="hidden" id="sec02qn002max" value="5" />
+
+<div id="sec02qn002sel1">
+</div>
+
+<div id="sec02qn002sel2">
+</div>
+
+<div id="sec02qn002sel3">
+</div>
+
+<div id="sec02qn002sel4">
+</div>
+
+<div id="sec02qn002sel5">
+</div>
+
+<div id="sec02qn002sub">
+<input type="button" id="sec02qn002input002" class="subAnswer"  name="435224" value="submit" /></div>
+</div>
+
+<div id="sec02qn002result" class="dispnone result"> </div>
+<hr />
+
+</div>
+
+<hr />
+</div> <!-- section end -->
+
+<div id="sec03" class="section">
+<div id="sec03hdr" class="styleSection">Section 3</div>
+<div id="sec03SumRes"></div> 
+<div id="sec03qn001" class="question multiMatches">
+<div id="sec03qn001hdr" class="qname">Question 1</div>
+<div id="sec03qn001text" class="qnInstr">Choose the matches
+<span id="sec03qn001score"  class="qnScore">9</span></div>
+<div id="sec03txt1" class="text"></div>
+<div id="sec03qn001opt">
+<input type="hidden" id="sec03qn001max" value="9" />
+<div id="mainMulMatch">
+<div id="qnHeadMatch" class="qnHead">Matches</div>
+<div id="ansHeadMatch" class="ansHead">Matches</div>
+<div class="row" id="sec03qn001r1">
+<div id="sec03q1" class="qLeft q1a4 q1a5" >
+<div id="sec03q1Index" class="Index">
+1
+</div>
+<div id="sec03q1Text" class="qText">Option 1</div>
+<div id="sec03q1Matches" class="qMatch">
+<table id="sec03q1Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div id="sec03a1" class="aRight q3a1 q4a1" >
+<div id="sec03a1Index" class="Index">
+a
+</div>
+<div id="sec03a1Text" class="aText">Answer A</div>
+<div id="sec03a1Matches" class="aMatch">
+<table id="sec03a1Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="sec03qn001r2" >
+<div id="sec03q2" class="qLeft q2a3" >
+<div id="sec03q2Index" class="Index">
+2
+</div>
+<div id="sec03q2Text" class="qText">Option 2</div>
+<div id="sec03q2Matches" class="qMatch">
+<table id="sec03q2Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="sec03a2" class="aRight">
+<div id="sec03a2Index" class="Index">
+b
+</div>
+<div id="sec03a2Text" class="aText">Answer B</div>
+<div id="sec03a2Matches" class="aMatch">
+<table id="sec03a2Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="sec03qn001r3" >
+<div id="sec03q3" class="qLeft q3a1" >
+<div id="sec03q3Index" class="Index">
+3
+</div>
+<div id="sec03q3Text" class="qText">Option 3</div>
+<div id="sec03q3Matches" class="qMatch">
+<table id="sec03q3Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="sec03a3" class="aRight q2a3" >
+<div id="sec03a3Index" class="Index">
+c
+</div>
+<div id="sec03a3Text" class="aText">Answer C</div>
+<div id="sec03a3Matches" class="aMatch">
+<table id="sec03a3Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="sec03qn001r4" >
+<div id="sec03q4" class="qLeft q4a5 q4a1">
+<div id="sec03q4Index" class="Index">
+4
+</div>
+<div id="sec03q4Text" class="qText">Option 4</div>
+<div id="sec03q4Matches" class="qMatch">
+<table id="sec03q4Table">
+<tr>
+<td id="sec03q4Match1"  class="style"></td>
+<td id="sec03q4unMatch1"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="sec03a4" class="aRight q1a4" >
+<div id="sec03a4Index" class="Index">
+d
+</div>
+<div id="sec03a4Text" class="aText">Answer D</div>
+<div id="sec03a4Matches" class="aMatch">
+<table id="sec03a4Table">
+<tr>
+<td  class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="sec03qn001r5" >
+<div id="sec03q5" class="qLeft">
+<div id="sec03q5Index" class="Index"></div>
+<div id="sec03q5Text" class="qText"></div>
+<div id="sec03q5Matches" class="qMatch">
+<table id="sec03q5Table">
+<tr>
+<td id="sec03q5Match1"  class="style"></td>
+<td id="sec03q5unMatch1"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="sec03a5" class="aRight q4a5 q1a5" >
+<div id="sec03a5Index" class="Index">
+e
+</div>
+<div id="sec03a5Text" class="aText">answer E</div> 
+<div id="sec03a5Matches" class="aMatch">
+<table id="sec03a5Table">
+<tr>
+<td  class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div id="controls">
+<input type="button"  value="align" />
+<input type="button"  value="reset" />
+</div>
+</div><!-- main -->
+
+<div id="sec03qn001sub">
+<input type="button" id="sec03qn001input001" class="subAnswer" name="92351" value="submit" />
+</div>
+</div>
+<div id="sec03qn001result" class="dispnone result"> </div>
+<hr />
+</div> <!-- end secqn001-->
+</div> <!-- section 3 end -->
+
+<div id="sec09">
+<span id="sec01notAttTot"></span>
+<span id="sec02notAttTot"></span>
+ 
+<div id="sumAll" class="section" >
+<div id="sumAllhdr" class="styleSection">Summary for all sections</div>
+<div id="sec01resSum">
+<table border="1">
+<tr>
+<th rowspan="2">Section</th>
+<th rowspan="2">Q/M</th>
+<th colspan="4" align="center">Attempted</th>
+<th>Not-Attempted</th>
+<th>Total</th>
+</tr>
+
+<tr>
+<th>Correct</th>
+<th>Partially Corrrect</th>
+<th>Incorrect</th>
+<th>Total</th>
+<th>Total</th>
+<th></th>
+</tr>
+
+<tr id="summsec01qnrow">
+<th rowspan="2">Section 1</th>
+<th>Questions</th>
+</tr>
+
+<tr id="summsec01scorerow">
+<th>Score/M-Marks</th>
+</tr>
+
+<tr id="summsec02qnrow">
+<th rowspan="2">Section 2</th>
+<th>Questions</th>
+</tr>
+
+<tr id="summsec02scorerow">
+<th>Score/M-Marks</th>
+</tr>
+
+<tr id="summsec03qnrow">
+<th rowspan="2">Section 3</th>
+<th>Questions</th>
+</tr>
+
+<tr id="summsec03scorerow">
+<th>Score/M-Marks</th>
+</tr>
+
+<tr>
+<th rowspan="2">Summary</th>
+<th>Questions</th>
+<th id="sumAllqnCorr"></th>
+<th id="sumAllqnPtCorr"></th>
+<th id="sumAllqnInCorr"> </th>
+<th id="sumAllqnAttTot"></th>
+<th id="sumAllqnNAtt"></th>
+<th id="sumAllqnTot"></th>
+
+</tr>
+
+<tr>
+<th>Score/M-Mark</th>
+
+<th id="sumAllScoreCorr"></th>
+<th id="sumAllScorePtCorr"></th>
+<th id="sumAllScoreInCorr"></th>
+<th id="sumAllScoreAttTot"></th>
+<th id="sumAllScoreNAtt"></th>
+<th id="sumAllScoreTot"></th>
+
+</tr>
+</table>
+
+</div> <!--ending  div of table-->
+</div>
+</div> <!--ending section of Summary all -->
+</div> <!-- main page end -->
+
+</body>
+</html>

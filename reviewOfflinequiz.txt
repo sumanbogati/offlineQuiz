@@ -1,0 +1,32 @@
+The quiz different from moodle..
+Review for that application
+These are the parts are available on that application
+
+
+	
+1)Sections:  There's section are available for different course(subject)  at the left side of 
+page..basically we can say there are three different parts at left side of page.. are Home, Sections, Summary (summary for all section)
+Home page -> give information about all sites..
+Sections -> Each section made for each course(subject) or for each quiz we can say. Inside the section user can attempt the different questions of quiz, and there would be a submit button for each question inside the particular section (course). It means a quiz have buttons in adaptive mode. After submit the answers the sign of correct will be shown and the buttons will be disappearing from particular section that the user can’t chose the question any more.
+
+2) Score Table: In top of page of each section there's a score table available for show the following information
+a) How many marks user got from maximum mark
+b) How many questions are attempted or not attempted
+c) How many questions are correct or incorrect..etc.
+
+Whenever user attempt the questions and press submit button in that time, table score(table) contains the scores, and as well as the summary table(for all section) contains that score. 
+All the information will be shown under the relative headers..like correct..incorrect..and attempted..on score table.
+when user click on appropriate header in that time through that header the program shows the formatted questions. Like when user click on "Correct" header of particular section on score table, in that time the program shows there how many questions are correct exactly on particular section. If user click on "Attempt" header..then the questions have been attempted will be shown.
+
+
+SUMMARY TABLE FOR ALL SERCTIONS...
+It’s available at left side of page, This table contains the score got by user from maximum marks inside the particular section, we can see score about all the sections on this table and can see also total score from total maximum mark..
+
+For now the questions types are..
+1.	True False...
+2.	Multichoice
+3.	Multianswer
+4.	Matching 
+5.	Multimatching(on which we can choose one option for more than one matches);
+The text and id of questions and answers, creating through the manually instead of gift format.
+

@@ -1,0 +1,4 @@
+name dictionary 
+r -> row
+q -> question 
+a -> answer

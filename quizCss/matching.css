@@ -1,0 +1,75 @@
+#sec3qn1{
+	width:100%;
+}
+
+div.qLeft{
+	width:45%;
+	float:left;
+	clear:both;
+}
+
+div.aRight{
+	float:left;
+	width:45%;
+}
+
+div.mightmatch{
+	border:1px solid black;
+}
+
+div.chosen{
+	border:2px solid black;
+}
+
+
+div.row{
+	width:100%;
+	clear:both;
+}
+
+div#controls{
+	text-align:center;
+	clear:both;
+}
+
+.style{
+	color:blue;
+	font-weight:bold;
+}
+
+div.Index{
+float:left;
+width:15px;
+}
+
+div.qText{
+float:left;
+}
+div.aText{
+float:left;
+}
+
+.aMatch, .qMatch{
+float:left;
+width:50px;
+margin-left:20px;
+
+}
+
+.qnHead{
+float:left;
+width: 25%;
+text-align:center;
+}
+
+.ansHead{
+float:right;
+width: 45%;
+}
+
+div.reChosen{
+border:2px solid #123456;
+color:navy;
+clear:left;
+font-size:16px;
+}

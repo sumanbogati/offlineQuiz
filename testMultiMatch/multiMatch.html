@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>multiMatch</title>
+<link rel="stylesheet" href="matching.css" />
+<script language="javascript" src="matchingvik.js"></script>
+<script language="javascript" src="libary.js"></script>
+</head>
+<body onload="attachInitEvent()">
+
+<div id="sec3" class="section">
+<div id="sec3hdr" class="styleSection">Section 2</div>
+<div id="sec3SumRes">
+<table border="1" id="sec3SumTab" class="sumTable">
+<tr>
+<th rowspan="2" ></th>
+<th colspan="4" align="center">Attempted</th>
+<th>Not<br />Attempted</th>
+<th>Total</th>
+</tr>
+
+<tr>
+<th><a href="#" onclick="displayQn('2', 'correct')">Correct</a></th>
+<th><a href="#" onclick="displayQn('2', 'ptCorrect')">Partially Corrrect</a></th>
+<th><a href="#" onclick="displayQn('2', 'inCorrect')">Incorrect</a></th>
+<th><a href="#" onclick="displayQn('2', 'attTotal')">Total</a></th>
+<th><a href="#" onclick="displayQn('2', 'allTotal')">Total</a></th>
+<th></th>
+</tr>
+
+<tr id="sec3qnrow">
+<th>Questions</th>
+<td id="sec3qnCorr"></td>
+<td id="sec3qnPtCorr"></td>
+<td id="sec3qnInCorr"></td>
+<td id="sec3qnTotAtt"></td>
+<td id="sec3qnTotNAtt"></td>
+<td id="sec3qnTotQns"></td>
+</tr>
+
+<tr id="sec3scorerow">
+<th>Score/M-Mark</th>
+<td id="sec3ScoreCorr"></td>
+<td id="sec3ScorePtCorr"></td>
+<td  id="sec3ScoreInCorr"></td>
+<td id="sec3ScoreTotAtt"></td>
+<td id="sec3ScoreTotNAtt"></td>
+<td id="sec3ScoreTotMarks"></td>
+
+</tr>
+</table>
+</div> <!--ending the wrapper of table from here-->
+<div id="sec3qn1" class="question shortAnswer">
+<div id="sec3qn1hdr" class="qname">Question 1</div>
+<div id="main">
+<div id="qnHeadMatch" class="qnHead">Matches</div>
+<div id="ansHeadMatch" class="ansHead">Matches</div>
+<div class="row" id="row1">
+
+<div id="q1" class="questions">
+<div id="q1Index" class="Index">
+1
+</div>
+<div id="q1Text" class="qText">Option 1</div>
+<div id="q1Matches" class="qMatch">
+<table id="q1Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+
+
+<div id="a1" class="answers">
+<div id="a1Index" class="Index">
+a
+</div>
+<div id="a1Text" class="aText">Answer A</div>
+<div id="a1Matches" class="aMatch">
+<table id="a1Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="row2" >
+
+<div id="q2" class="questions">
+<div id="q2Index" class="Index">
+2
+</div>
+<div id="q2Text" class="qText">Option 2</div>
+<div id="q2Matches" class="qMatch">
+<table id="q2Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="a2" class="answers">
+<div id="a2Index" class="Index">
+b
+</div>
+<div id="a2Text" class="aText">Answer B</div>
+<div id="a2Matches" class="aMatch">
+<table id="a2Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="row3" >
+<div id="q3" class="questions">
+<div id="q3Index" class="Index">
+3
+</div>
+<div id="q3Text" class="qText">Option 3</div>
+<div id="q3Matches" class="qMatch">
+<table id="q3Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="a3" class="answers">
+<div id="a3Index" class="Index">
+c
+</div>
+<div id="a3Text" class="aText">Answer C</div>
+<div id="a3Matches" class="aMatch">
+<table id="a3Table">
+<tr>
+<td class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="row4" >
+<div id="q4" class="questions">
+<div id="q4Index" class="Index">
+4
+</div>
+<div id="q4Text" class="qText">Option 4</div>
+<div id="q4Matches" class="qMatch">
+<table id="q4Table">
+<tr>
+<td id="q4Match1"  class="style"></td>
+<td id="q4unMatch1"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="a4" class="answers">
+<div id="a4Index" class="Index">
+d
+</div>
+<div id="a4Text" class="aText">Answer D</div>
+<div id="a4Matches" class="aMatch">
+<table id="a4Table">
+<tr>
+<td  class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row" id="row5" >
+<div id="q5" class="questions">
+<div id="q5Index" class="Index">
+</div>
+<div id="q5Matches" class="qMatch">&nbsp;
+</div>
+</div>
+<div id="a5" class="answers">
+<div id="a5Index" class="Index">
+e
+</div>
+<div id="a5Text" class="aText">answer E</div> 
+<div id="a5Matches" class="aMatch">
+<table id="a5Table">
+<tr>
+<td  class="style"></td>
+<td></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div id="controls">
+<input type="submit"  value="align" />
+<input type="reset"  value="reset" />
+<input type="submit"  value="submit" />
+</div>
+
+</div><!-- main -->
+
+
+
+<div id="sec3qn1result" class="dispnone result"> </div>
+
+</div>
+
+
+
+</div> <!-- section end -->
+
+</body>
+</html>
